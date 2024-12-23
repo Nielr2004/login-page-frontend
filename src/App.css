@@ -1,0 +1,96 @@
+/* styles.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+  background-color: #f4f4f4; /* Light background color */
+  color: #333; /* Dark text color for readability */
+  line-height: 1.6; /* Improve line height for readability */
+}
+
+/* Main App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px; /* Add padding for smaller screens */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; /* Limit the width of the form */
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+  background-color: white; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Input Styles */
+input {
+  margin: 10px 0; /* Space above and below inputs */
+  padding: 12px; /* Padding for input */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  transition: border 0.3s ease; /* Smooth transition for border color */
+}
+
+input:focus {
+  border: 1px solid #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button {
+  padding: 12px; /* Padding for button */
+  background-color: #007bff; /* Primary button color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 14px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+button:disabled {
+  background-color: #a3c6f1; /* Light color for disabled button */
+  cursor: not-allowed; /* Not allowed cursor */
+}
+
+/* Error Message Styles */
+p.error {
+  text-align: center; /* Center align error messages */
+  color: red; /* Red color for error messages */
+  margin: 10px 0; /* Space around error messages */
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .App {
+      padding: 10px; /* Add padding for smaller screens */
+  }
+
+  form {
+      width: 100%; /* Full width on small screens */
+      max-width: 100%; /* Remove max width */
+  }
+
+  input, button {
+      font-size: 16px; /* Increase font size for smaller screens */
+  }
+}
